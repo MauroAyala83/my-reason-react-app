@@ -25,7 +25,7 @@ module Task = {
   /** Task.make("my task") will create a new task with a random id, with
       Pending status, and with "my task" as a label  */
   let make = label => {
-    id: Js.Date.now() |> Js.Float.toString,
+    id: Js.Date.now(mauro) |> Js.Float.toString,
     label,
     status: Pending,
   };
